@@ -5,7 +5,7 @@ fn main() {
     // windowの設定
     let options = eframe::NativeOptions {
         viewport: egui::viewport::ViewportBuilder::default()
-            .with_inner_size([600.0, 800.0]),
+            .with_inner_size([800.0, 600.0]),
         ..Default::default()
     };
 

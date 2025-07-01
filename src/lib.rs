@@ -1,11 +1,23 @@
 use eframe::egui::{self, FontData, FontDefinitions};
 
 #[derive(Default)]
-pub struct MomijiEditor;
+pub struct MomijiEditor {
+
+}
 
 impl eframe::App for MomijiEditor {
     fn update(&mut self, ctx: &egui::Context, frame: &mut eframe::Frame) {
-        
+        egui::TopBottomPanel::top("top_menu_bar").show(ctx, |ui| {
+            ui.label("メニューバーになる予定");
+        });
+
+        egui::TopBottomPanel::bottom("status_bar").show(ctx, |ui| {
+            ui.label("ステータスバーになる予定");
+        });
+
+        egui::SidePanel::left("side_menu_bar").show(ctx, |ui| {
+            ui.label("サイドメニューバー");
+        });
     }
 }
 
