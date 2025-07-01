@@ -20,7 +20,7 @@ impl eframe::App for MomijiEditor {
         });
 
         egui::SidePanel::left("side_menu_bar").show(ctx, |_ui| {
-
+            
         });
 
         egui::CentralPanel::default().show(ctx, |ui| {
