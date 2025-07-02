@@ -2,7 +2,9 @@ mod plugin;
 use eframe::egui::{self, FontData, FontDefinitions};
 
 #[derive(Default)]
-pub struct MomijiEditor;
+pub struct MomijiEditor {
+    open_folder: Option<String>,
+}
 
 impl MomijiEditor {
     
