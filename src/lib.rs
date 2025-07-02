@@ -1,6 +1,4 @@
 mod plugin;
-#[warn(unused_imports)]
-use plugin::file_tree;
 use eframe::egui::{self, FontData, FontDefinitions};
 
 #[derive(Default)]
